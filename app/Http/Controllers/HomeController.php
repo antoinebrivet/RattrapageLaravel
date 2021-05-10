@@ -9,7 +9,7 @@ class HomeController extends Controller
 
     public function index()
     {
-       echo 'Home Page';
+       return view ('homepage', ['title'=>'Home Page']);
     }
 
 }

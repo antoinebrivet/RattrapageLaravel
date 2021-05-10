@@ -24,9 +24,8 @@ Route::get('/',[HomeController::class, 'index']);//Lier la route et le controlle
 
 Route::get('/product',[ProductController::class, 'index']);
 
-Route::get('/product/{id}', function($id){
-    return 'Fiche du produit '.$id;//Afficher le texte
-});
+Route::get('/product/{id}',[ProductController::class, 'index2']);
+
 
 Route::get('/cart', [CartController::class, 'index']);
 

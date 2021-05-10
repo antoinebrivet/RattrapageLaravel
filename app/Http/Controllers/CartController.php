@@ -9,7 +9,7 @@ class CartController extends Controller
 
     public function index()
     {
-        echo'Panier';
+        return view('cart', ['title'=>'Panier']);
     }
 
 }

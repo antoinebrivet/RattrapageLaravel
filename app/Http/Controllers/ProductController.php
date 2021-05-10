@@ -9,11 +9,11 @@ class ProductController extends Controller
 
     public function index()
     {
-        echo 'Liste des Produits';
+        return view('product-list', ['title'=>'Liste des Produits']);
     }
 
-    public function index2()
+    public function index2($id)
     {
-        echo 'Fiche du produit .$id';
+        return view('product-details', ['id'=>$id]);
     }
 }
